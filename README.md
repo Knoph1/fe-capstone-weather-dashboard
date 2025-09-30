@@ -5,8 +5,7 @@
 
 A fully responsive **Weather Dashboard** built with **React (Vite) + Tailwind CSS**, designed to fetch and display live weather conditions and forecasts using the **OpenWeather API**.  
 
----
-
+---  
 ## 🚀 Features
 - 🌍 **City Search** → Search by city name and fetch real-time weather data.  
 - 🌡️ **Current Conditions** → Temperature, humidity, wind speed and general description.  
@@ -14,16 +13,14 @@ A fully responsive **Weather Dashboard** built with **React (Vite) + Tailwind CS
 - 📱 **Responsive Design** → Optimized for mobile, tablet and desktop screens.  
 - ⚡ **Fast Development** → Powered by React (Vite) with Hot Module Replacement.  
 
----
-
+---  
 ## 🛠️ Tech Stack
 - **React (Vite)** → Lightweight and fast development environment.  
 - **Tailwind CSS** → Modern utility-first styling.  
 - **OpenWeather API** → Real-time weather data.  
 - **React Router DOM** (planned) → For seamless navigation between components.  
 
----
-
+---  
 ## 📂 Project Structure
 ```bash
 fe-capstone-weather-dashboard/
@@ -51,14 +48,13 @@ fe-capstone-weather-dashboard/
 └── README.md
 ```
 
----
-
+---  
 ## ⚙️ Setup & Installation
 Clone the repository and install dependencies:
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR-USERNAME/fe-capstone-weather-dashboard.git
+git clone https://github.com/Knoph1/fe-capstone-weather-dashboard.git
 
 # Navigate into project directory
 cd fe-capstone-weather-dashboard
@@ -70,8 +66,7 @@ npm install
 npm run dev
 ```
 
----
-
+---  
 ## ✅ Project Progress
 - [x] Initialize project with React + Tailwind CSS  
 - [ ] Fetch weather data from OpenWeather API  
@@ -79,26 +74,21 @@ npm run dev
 - [ ] Add responsive layout with Tailwind  
 - [ ] Implement navigation with React Router  
 
----
-
+---  
 ## 📸 Screenshots (To Be Added)
-_Add screenshots or GIFs of your Weather Dashboard once UI is ready._
+_Screenshots or GIFs of this Weather Dashboard once UI is ready._
 
----
-
+---  
 ## 📜 License
 This project is licensed under the **MIT License**.  
 
----
-
+---  
 ## 📌 Author
-👤 **Knoph Oluoch Ayieko**  
+👤 **Knoph O. Ayieko**  
 - 🌐 Portfolio: [knoph.dev](https://knoph.dev)  
 - 💼 LinkedIn: [Knoph Ayieko](https://linkedin.com/in/knoph-ayieko)  
 - 🐙 GitHub: [Knoph1](https://github.com/Knoph1)  
 
+---  
+&copy; September 30, 2025 | **Weather Dashboard**, *ALX Africa* - **Knoph O. Ayieko** | All rights reserved.  
 ---
-
-### 🔗 Submission  
-Once completed, submit your repo link as required by ALX:  
-👉 `https://github.com/YOUR-USERNAME/fe-capstone-weather-dashboard`
