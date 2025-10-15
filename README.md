@@ -1,3 +1,162 @@
+# Weather Dashboard
+
+A professional, full-featured weather dashboard built with Next.js, providing real-time weather data and forecasts for any location worldwide.
+
+## Features
+
+- **Real-Time Weather Data**: Current weather conditions including temperature, humidity, wind speed, pressure, visibility, and more
+- **5-Day Forecast**: Detailed daily weather forecasts with temperature ranges and conditions
+- **24-Hour Forecast**: Hourly weather predictions for the next 24 hours
+- **Geolocation Support**: Automatically detect and display weather for your current location
+- **Saved Locations**: Save and quickly access weather data for frequently searched cities
+- **Light/Dark Mode**: Seamless theme switching with system preference support
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **SEO Optimized**: Complete metadata, sitemap, and robots.txt for search engine visibility
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+- **Weather API**: OpenWeatherMap
+- **Theme**: next-themes
+- **Deployment**: Vercel
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- OpenWeatherMap API key (get one at [openweathermap.org](https://openweathermap.org/api))
+
+### Installation
+
+1. Clone the repository:
+   \`\`\`bash
+   git clone `<repository-url>`
+   cd weather-dashboard
+   \`\`\`
+2. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+3. Update the API key in `lib/weather-api.ts`:
+   \`\`\`typescript
+   const API_KEY = "your-api-key-here"
+   \`\`\`
+4. Run the development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+\`\`\`
+weather-dashboard/
+├── app/                    # Next.js app directory
+│   ├── forecast/          # Forecast page
+│   ├── locations/         # Saved locations page
+│   ├── layout.tsx         # Root layout with metadata
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   ├── header.tsx        # Navigation header
+│   ├── footer.tsx        # Footer component
+│   └── ...               # Weather-specific components
+├── lib/                   # Utility functions
+│   ├── weather-api.ts    # OpenWeatherMap API integration
+│   └── local-storage.ts  # Local storage utilities
+└── public/               # Static assets
+    ├── manifest.json     # PWA manifest
+    ├── robots.txt        # SEO robots file
+    └── sitemap.xml       # SEO sitemap
+\`\`\`
+
+## Features in Detail
+
+### Current Weather
+
+- Temperature (current, feels like, min/max)
+- Weather conditions with icons
+- Humidity percentage
+- Wind speed and direction
+- Atmospheric pressure
+- Visibility
+- Cloudiness
+- Sunrise and sunset times
+
+### Forecasts
+
+- 5-day daily forecast with temperature ranges
+- 24-hour hourly forecast
+- Precipitation probability
+- Weather condition icons
+- Detailed metrics for each forecast period
+
+### Saved Locations
+
+- Automatically save searched locations
+- Quick access to saved cities
+- Preview weather on hover
+- Remove individual or all locations
+- Persistent storage using localStorage
+
+### Theme Support
+
+- Dark mode (default)
+- Light mode
+- System preference detection
+- Smooth transitions
+
+## API Integration
+
+This project uses the OpenWeatherMap API with the following endpoints:
+
+- Current Weather: `/weather`
+- 5-Day Forecast: `/forecast`
+- Geocoding: `/geo/1.0/direct`
+
+All API calls are made server-side for better performance and security.
+
+## SEO Optimization
+
+- Comprehensive metadata for all pages
+- Open Graph tags for social sharing
+- Twitter Card support
+- Sitemap.xml for search engines
+- Robots.txt for crawler instructions
+- Semantic HTML structure
+- Accessible components with ARIA labels
+
+## Deployment
+
+Deploy to Vercel with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+Or deploy manually:
+
+\`\`\`bash
+npm run build
+npm start
+\`\`\`
+
+## License
+
+MIT License - feel free to use this project for personal or commercial purposes.
+
+## Credits
+
+- Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/)
+
+
+
+
+
 # Weather Dashboard  
 ---  
 ## 🌦️ Weather Dashboard  
@@ -70,13 +229,13 @@ npm run dev
 ## ✅ Project Progress
 - [x] Initialize project with React + Tailwind CSS  
 - [ ] Fetch weather data from OpenWeather API  
-- [ ] Build dashboard UI (Search, WeatherCard, Forecast)  
+- [x] Build dashboard UI (Search, WeatherCard, Forecast)  
 - [ ] Add responsive layout with Tailwind  
 - [ ] Implement navigation with React Router  
 
 ---  
-## 📸 Screenshots (To Be Added)
-_Screenshots or GIFs of this Weather Dashboard once UI is ready._
+## 📸 Screenshots (Not yet added)
+_Screenshots and/or GIFs of this Weather Dashboard_ once UI is ready.
 
 ---  
 ## 📜 License
