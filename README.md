@@ -1,20 +1,20 @@
 # 🌦️ Weather Dashboard  
-**ALX Front-End Capstone Project by Knoph O. Ayieko**
+**ALX Front-End Capstone Project**
 
 A professional and fully responsive **Weather Dashboard** built with **React (Vite)** and **Tailwind CSS**, delivering real-time weather updates and forecasts from the **OpenWeatherMap API**.  
-This project demonstrates modern front-end development best practices — speed, interactivity, accessibility, and scalability.
+This project demonstrates modern front-end development best practices — speed, interactivity, accessibility and scalability.
 
 ---
 
 ## ✨ Features
 
-- 🌍 **Real-Time Weather Data** — Live conditions: temperature, humidity, wind speed, pressure, and visibility.  
+- 🌍 **Real-Time Weather Data** — Live conditions: temperature, humidity, wind speed, pressure and visibility.  
 - 📅 **5-Day Forecast** — Detailed daily weather predictions with temperature ranges and icons.  
 - 🕐 **24-Hour Forecast** — Hourly updates for short-term planning *(planned feature)*.  
 - 📌 **Saved Locations** — Save and manage frequently viewed cities *(coming soon)*.  
 - 🧭 **Geolocation Support** — Automatically detect and display current location weather *(planned)*.  
-- 🌓 **Dark / Light Mode** — Seamless theme switching based on user or system preference.  
-- 📱 **Responsive Design** — Optimized for desktop, tablet, and mobile devices.  
+- 🌓 **Dark/Light Mode** — Seamless theme switching based on user or system preference.  
+- 📱 **Responsive Design** — Optimized for desktop, tablet and mobile devices.  
 - ⚙️ **Fast Development** — Powered by **Vite** for instant hot module reloads.  
 - 🔍 **SEO Optimized** — Clean metadata and accessible markup for better discoverability.
 
@@ -59,7 +59,8 @@ fe-capstone-weather-dashboard/
 ├── package-lock.json
 ├── tailwind.config.js
 ├── vite.config.js
-└── README.md
+└── LICENSE                  # Licensing (MIT License)
+└── README.md                # Documentation
 ```
 
 ---
@@ -82,12 +83,12 @@ cd fe-capstone-weather-dashboard
 npm install
 
 # Add your OpenWeather API key in `src/lib/weather-api.js`
-const API_KEY = "your-api-key-here"
+const API_KEY = "api-key"
 
 # Run development server
 npm run dev
 ```
-Then open **[http://localhost:5173](http://localhost:5173)** in your browser.
+Then open **[http://localhost:5173](http://localhost:5173)** in browser.
 
 ---
 
@@ -96,7 +97,7 @@ Then open **[http://localhost:5173](http://localhost:5173)** in your browser.
 ### Current Weather
 - Temperature (current, feels like, min/max)  
 - Conditions with visual icons  
-- Humidity, wind speed/direction, and atmospheric pressure  
+- Humidity, wind speed/direction and atmospheric pressure  
 - Sunrise and sunset times  
 
 ### Forecast
@@ -110,7 +111,7 @@ Then open **[http://localhost:5173](http://localhost:5173)** in your browser.
 - Persistent storage via `localStorage`
 
 ### Theme Support
-- Light, Dark, and System modes  
+- Light, Dark and System modes  
 - Smooth transition animations  
 
 ---
@@ -152,28 +153,28 @@ API requests are efficiently handled and parsed for display-ready weather inform
 ---
 
 ## 📸 Screenshots
-_Screenshots and GIF previews will be added once the final UI version is complete._
+_Screenshots and GIF previews, to be added once the final UI version is complete._
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute it for personal or commercial purposes.
+You are free to use, modify and distribute it for personal or commercial purposes.
 
 ---
 
 ## 👤 Author
 
 **Knoph O. Ayieko**  
-💻 *Front-End Developer | Researcher | IT Specialist*  
+💻 *Front-End Developer | IT Specialist | Researcher*  
 
-- 🌐 Portfolio: [knoph.dev](https://knoph.dev)  
+- 🌐 Portfolio: [knoph.dev](https://www.knoph.dev/)  
 - 💼 LinkedIn: [Knoph Ayieko](https://linkedin.com/in/knoph-ayieko)  
-- 🐙 GitHub: [@Knoph1](https://github.com/Knoph1)  
-- ✉️ Email: [knopholuoch@gmail.com](mailto:knopholuoch@gmail.com)
+- 🐙 GitHub: [Knoph1](https://github.com/Knoph1)  
+- ✉️ Email: [knophayieko@gmail.com](mailto:knophayieko@gmail.com)
 
 ---
 
 ### © 2025 | Weather Dashboard — ALX Africa Capstone Project  
-*Crafted with code, creativity, and purpose by Knoph O. Ayieko.*
+*Crafted with code, creativity and purpose by Knoph O. Ayieko.*
