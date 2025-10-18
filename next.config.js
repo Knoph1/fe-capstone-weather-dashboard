@@ -1,3 +1,4 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -9,6 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  reactStrictMode: true,
+};
 
-export default nextConfig
+module.exports = nextConfig;
