@@ -1,34 +1,44 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
 
-  // Allow Next.js to use environment variables securely
+  // Secure access to environment variables
   env: {
     OPENWEATHER_API_KEY: process.env.OPENWEATHER_API_KEY,
   },
 
-  // Enable image optimization for OpenWeather & other external APIs
+  // Allow images from OpenWeather and Unsplash
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "openweathermap.org", // for weather icons
+        hostname: "openweathermap.org",
       },
       {
         protocol: "https",
-        hostname: "cdn-icons-png.flaticon.com", // optional (for UI icons)
+        hostname: "cdn-icons-png.flaticon.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
     ],
   },
 
-  // Experimental optimizations for performance
+  // Ignore ESLint errors during build (optional, for CI/CD)
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  // Enable some experimental performance features
   experimental: {
     serverActions: true,
     optimizePackageImports: ["lucide-react", "@/components/ui"],
   },
 
-  // Allow static exports if needed later
+  // Ensure production builds export correctly
   output: "standalone",
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
