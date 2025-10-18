@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import { SavedLocationCard } from "@/components/saved-location-card"
 import { Button } from "@/components/ui/button"
 import { getSavedLocations, removeLocation, clearAllLocations, type SavedLocation } from "@/lib/local-storage"
-import { Trash2, MapPin } from "lucide-react"
+import { Trash2, MapPin } from "@/components/icons"
 import {
   AlertDialog,
   AlertDialogAction,

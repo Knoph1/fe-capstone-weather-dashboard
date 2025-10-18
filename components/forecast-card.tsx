@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import type { ForecastData } from "@/lib/weather-api"
 import { formatTemp, getWeatherIconUrl } from "@/lib/weather-api"
 import Image from "next/image"
-import { Droplets, Wind } from "lucide-react"
+import { Droplets, Wind } from "@/components/icons"
 
 interface ForecastCardProps {
   data: ForecastData

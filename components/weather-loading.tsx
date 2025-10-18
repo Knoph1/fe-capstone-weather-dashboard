@@ -1,4 +1,4 @@
-import { Loader2 } from "lucide-react"
+import { Loader2 } from "@/components/icons"
 import { Card, CardContent } from "@/components/ui/card"
 
 export function WeatherLoading() {

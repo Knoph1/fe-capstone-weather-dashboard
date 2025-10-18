@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Search } from "lucide-react"
+import { Search } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 

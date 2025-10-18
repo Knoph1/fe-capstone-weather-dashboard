@@ -16,7 +16,7 @@ import {
 } from "@/lib/weather-api"
 import { saveLocation } from "@/lib/local-storage"
 import { Button } from "@/components/ui/button"
-import { MapPin } from "lucide-react"
+import { MapPin } from "@/components/icons"
 import { HourlyForecast } from "@/components/hourly-forecast"
 
 export default function HomePage() {
