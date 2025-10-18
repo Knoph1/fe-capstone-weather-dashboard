@@ -45,6 +45,8 @@ vercel-ignore.txt
 .tmp/
 .cache/
 .pnpm-store/
+vercel-ignore.txt
+vercel.json
 
 # TypeScript build info
 *.tsbuildinfo
