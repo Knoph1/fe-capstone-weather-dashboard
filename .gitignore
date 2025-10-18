@@ -16,14 +16,15 @@ dist/
 build/
 coverage/
 
-# Vercel-specific files (though OPTIONAL)
+# Vercel-specific files (optional)
 .vercel/
 vercel-ignore.txt
 
 # Environment files
 .env
 .env.*
-!.env.example        <--! Keep a template for sharing !-->
+# Keep a template for sharing
+!.env.example
 .env.local
 .env.development.local
 .env.production.local
@@ -45,10 +46,10 @@ vercel-ignore.txt
 .cache/
 .pnpm-store/
 
-# TypeScript build info.
+# TypeScript build info
 *.tsbuildinfo
 
-# Others but OPTIONAL: npm/yarn/pnpm lock files should generally be committed for reproducible builds
+# Optional: npm/yarn/pnpm lock files (commit for reproducible builds)
 # pnpm-lock.yaml
 # package-lock.json
 # yarn.lock
