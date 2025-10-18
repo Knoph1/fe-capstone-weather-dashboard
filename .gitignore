@@ -10,18 +10,20 @@ lerna-debug.log*
 node_modules/
 
 # Build and distribution directories
-dist/
-dist-ssr/
 .next/
 out/
+dist/
 build/
 coverage/
-vercel-ignore.txt
-.vercel/
 
-# Local environment files / Environment variables
+# Vercel-specific files (though OPTIONAL)
+.vercel/
+vercel-ignore.txt
+
+# Environment files
 .env
-.env*
+.env.*
+!.env.example        # Keep a template for sharing
 .env.local
 .env.development.local
 .env.production.local
@@ -38,7 +40,15 @@ vercel-ignore.txt
 *.sln
 *.sw?
 
-# Miscellaneous
+# Miscellaneous caches
 .tmp/
 .cache/
 .pnpm-store/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Others but OPTIONAL: npm/yarn/pnpm lock files should generally be committed for reproducible builds
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
