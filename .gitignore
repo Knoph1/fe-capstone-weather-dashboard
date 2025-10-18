@@ -19,6 +19,7 @@ dist-ssr/
 out/
 build/
 coverage/
+.vercel/
 
 # Local environment files / Environment variables
 *.local

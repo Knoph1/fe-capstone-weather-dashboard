@@ -1,7 +1,7 @@
 # -------------------------------------------------------------
 # VERCEL DEPLOYMENT IGNORE LIST
 # Project: Next.js Weather Dashboard
-# Author: Knoph Oluoch Ayieko
+# Author: Knoph O. Ayieko
 # Purpose: Optimize build speed & exclude non-essential files
 # -------------------------------------------------------------
 
