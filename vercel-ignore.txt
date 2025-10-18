@@ -1,0 +1,77 @@
+# -------------------------------------------------------------
+# VERCEL DEPLOYMENT IGNORE LIST
+# Project: Next.js Weather Dashboard
+# Author: Knoph Oluoch Ayieko
+# Purpose: Optimize build speed & exclude non-essential files
+# -------------------------------------------------------------
+
+# Node and build artifacts
+node_modules/
+.npm/
+.pnpm-store/
+.bun/
+dist/
+build/
+.next/cache/
+.next/static/chunks/*.map
+
+# Local environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.DS_Store
+
+# IDE & system files
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+*.swp
+Thumbs.db
+
+# Tests and documentation
+__tests__/
+tests/
+test/
+coverage/
+docs/
+examples/
+storybook/
+cypress/
+jest.config.*
+playwright.config.*
+
+# Git & CI/CD metadata
+.git/
+.gitignore
+.gitattributes
+.github/
+.gitlab-ci.yml
+.circleci/
+.vscode/
+
+# Assets not required for production
+*.psd
+*.ai
+*.sketch
+*.xcf
+*.tiff
+*.zip
+*.rar
+*.tar.gz
+
+# Local scripts and research files
+scripts/
+notes/
+research/
+drafts/
+tmp/
+
+# Optional: backup files
+backup/
+old/
+legacy/
+deprecated/
