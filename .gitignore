@@ -20,9 +20,10 @@ out/
 build/
 coverage/
 
-# Local environment files
+# Local environment files / Environment variables
 *.local
 .env
+.env*
 .env.local
 .env.development.local
 .env.production.local
