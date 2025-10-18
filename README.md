@@ -1,22 +1,45 @@
 # 🌦️ Weather Dashboard  
+---
+
+# fe-capstone-weather-dashboard  
 **ALX Front-End Capstone Project**
 
-A professional and fully responsive **Weather Dashboard** built with **React (Vite)** and **Tailwind CSS**, delivering real-time weather updates and forecasts from the **OpenWeatherMap API**.  
+A professional, fully responsive **Weather Dashboard** built with **React (Vite)** and **Tailwind CSS**, delivering real-time weather updates and forecasts using the **OpenWeatherMap API**.  
 This project demonstrates modern front-end development best practices — speed, interactivity, accessibility and scalability.
+
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-blue)](https://fe-capstone-weather.vercel.app/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+---
+
+## 🌤️ Overview
+
+The **Weather Dashboard** allows users to check live weather conditions and forecasts for any location worldwide. It is designed with a focus on performance, UX and maintainability.
+
+- Real-time temperature, humidity, wind, pressure and visibility.
+- Daily and hourly forecasts (planned).
+- Dark/Light theme toggle with smooth transitions.
+- Geolocation support (planned).
+- Responsive and accessible across devices.
+
+---
+
+## 🚀 Live Demo
+
+Check out the live application here: [Weather Dashboard on Vercel](https://fe-capstone-weather.vercel.app/)
 
 ---
 
 ## ✨ Features
 
-- 🌍 **Real-Time Weather Data** — Live conditions: temperature, humidity, wind speed, pressure and visibility.  
-- 📅 **5-Day Forecast** — Detailed daily weather predictions with temperature ranges and icons.  
-- 🕐 **24-Hour Forecast** — Hourly updates for short-term planning *(planned feature)*.  
-- 📌 **Saved Locations** — Save and manage frequently viewed cities *(coming soon)*.  
-- 🧭 **Geolocation Support** — Automatically detect and display current location weather *(planned)*.  
-- 🌓 **Dark/Light Mode** — Seamless theme switching based on user or system preference.  
-- 📱 **Responsive Design** — Optimized for desktop, tablet and mobile devices.  
-- ⚙️ **Fast Development** — Powered by **Vite** for instant hot module reloads.  
-- 🔍 **SEO Optimized** — Clean metadata and accessible markup for better discoverability.
+- 🌍 **Current Weather:** Temperature, feels like, min/max, conditions with icons, humidity, wind, pressure, sunrise/sunset times.
+- 📅 **5-Day Forecast:** Daily overview with icons, temperature ranges and weather predictions.
+- 🕐 **24-Hour Forecast:** Hourly weather updates (planned).
+- 📌 **Saved Locations:** Store frequently searched cities (planned).
+- 🌓 **Dark/Light Mode:** Seamless theme switching based on user or system preference.
+- 📱 **Responsive Design:** Optimized for desktop, tablet and mobile.
+- ⚡ **Fast Development:** Powered by **Vite** for instant hot reloads.
+- 🔍 **SEO & Accessibility:** Clean metadata, semantic HTML, ARIA attributes, descriptive URLs.
 
 ---
 
@@ -32,123 +55,131 @@ This project demonstrates modern front-end development best practices — speed,
 | **Deployment** | Vercel / Netlify |
 | **Version Control** | Git + GitHub |
 
----
-
-## 📂 Project Structure
-
+--- ## 📂 Project Structure
 ```bash
 fe-capstone-weather-dashboard/
-├── public/                  # Static assets
-├── src/
-│   ├── components/          # Reusable UI components
-│   │   ├── Navbar.jsx
-│   │   ├── SearchBar.jsx
-│   │   ├── WeatherCard.jsx
-│   │   ├── Forecast.jsx
-│   │   └── Footer.jsx
-│   ├── pages/               # Page-level components
-│   │   ├── Home.jsx
-│   │   └── About.jsx
-│   ├── App.jsx              # Main application file
-│   ├── main.jsx             # Entry point
-│   └── index.css            # Tailwind base styles
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── tailwind.config.js
-├── vite.config.js
-└── LICENSE                  # Licensing (MIT License)
-└── README.md                # Documentation
+├── .dist/                  # Build output / compiled production-ready files
+├── .vscode/                # VS Code workspace & editor settings
+│   └── settings.json
+├── app/                    # Application routes/pages (Next.js App Router)
+│   ├── forecast/           # Forecast feature (layout + page)
+│   ├── locations/          # Locations feature (layout + page)
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # Root layout component
+│   ├── loading.tsx         # App-level loading screen
+│   └── page.tsx            # Home page
+├── components/             # Reusable components
+│   └── ui/                 # UI building blocks (buttons, modals, cards, etc.)
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── dialog.tsx
+│       ├── input.tsx
+│       ├── table.tsx
+│       └── ...other UI components
+├── hooks/                  # Custom React hooks (e.g., useWeather, useFetch)
+│   └── ...
+├── lib/                    # Utility functions, API logic and helpers
+│   ├── api.ts
+│   └── ...
+├── public/                 # Static assets (images, icons, fonts)
+│   ├── favicon.ico
+│   └── ...
+├── styles/                 # Global or modular stylesheets
+│   ├── variables.css
+│   └── ...
+├── .env.local              # Local environment variables (API keys, secrets)
+├── .gitignore              # Git ignore rules
+├── .postcssrc              # PostCSS configuration (alternative format)
+├── components.json         # ShadCN/UI or component metadata
+├── eslint.config.js        # ESLint configuration
+├── index.html              # HTML template (if used by Vite)
+├── LICENSE                 # License file (MIT)
+├── next-env.d.ts           # Next.js TypeScript declarations
+├── next.config.mjs         # Next.js configuration
+├── package.json            # Dependencies, scripts and metadata
+├── pnpm-lock.yaml          # Package lock file for pnpm
+├── pnpm-workspace.yaml     # pnpm workspace setup
+├── postcss.config.mjs      # PostCSS configuration (Tailwind, Autoprefixer)
+├── README.md               # Project documentation
+├── SECURITY.md             # Security policy
+├── tailwind.config.js      # TailwindCSS configuration (themes, plugins)
+├── tsconfig.json           # TypeScript compiler configuration
+├── vercel-ignore.txt       # Files ignored during Vercel deployment
+├── vercel.json             # Vercel deployment configuration
+└── vite.config.js          # Vite bundler configuration (if integrated)
 ```
 
----
-
+---  
 ## ⚙️ Setup & Installation
 
-### 1. Prerequisites
+### Prerequisites
 - Node.js 18+ installed  
-- An API key from [OpenWeatherMap](https://openweathermap.org/api)
+- API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-### 2. Installation
+### Installation
 ```bash
-# Clone this repository
+# Clone repository
 git clone https://github.com/Knoph1/fe-capstone-weather-dashboard.git
-
-# Navigate into the project
 cd fe-capstone-weather-dashboard
 
 # Install dependencies
 npm install
 
-# Add your OpenWeather API key in `src/lib/weather-api.js`
-const API_KEY = "api-key"
+# Add OpenWeatherMap API key in src/lib/weather.ts
+const API_KEY = "your_api_key_here"
 
 # Run development server
 npm run dev
 ```
-Then open **[http://localhost:5173](http://localhost:5173)** in browser.
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🌡️ Features in Detail
+## 🌡️ Detailed Features
 
 ### Current Weather
-- Temperature (current, feels like, min/max)  
-- Conditions with visual icons  
-- Humidity, wind speed/direction and atmospheric pressure  
-- Sunrise and sunset times  
+- Temperature, feels like, min/max
+- Humidity, wind speed/direction, pressure
+- Sunrise and sunset times
+- Weather conditions with icons
 
 ### Forecast
-- 5-day daily overview with weather icons  
-- Hourly forecast *(coming soon)*  
-- Probability of precipitation and cloud coverage  
+- 5-day daily overview
+- Hourly updates *(planned)*
+- Probability of precipitation and cloud coverage
 
 ### Saved Locations *(Future Update)*
-- Save and access frequently searched cities  
-- Delete or update locations easily  
-- Persistent storage via `localStorage`
+- Store frequently searched cities
+- Persistent storage using `localStorage`
+- Delete or update saved cities
 
 ### Theme Support
-- Light, Dark and System modes  
-- Smooth transition animations  
+- Light, Dark and System modes
+- Smooth animations and transitions
 
 ---
 
 ## 🌐 API Integration
 
-This project consumes the **OpenWeatherMap API** with the following endpoints:
-
 | Purpose | Endpoint |
-|----------|-----------|
+|---------|----------|
 | Current Weather | `/data/2.5/weather` |
 | 5-Day Forecast | `/data/2.5/forecast` |
 | Geocoding | `/geo/1.0/direct` |
 
-API requests are efficiently handled and parsed for display-ready weather information.
-
----
-
-## 🧭 SEO & Accessibility
-
-- Optimized metadata on all pages  
-- Semantic HTML5 structure  
-- ARIA-labeled accessible components  
-- Open Graph and Twitter Card metadata *(planned)*  
-- Clean URLs and descriptive titles  
+API responses are parsed and displayed in a user-friendly format.
 
 ---
 
 ## 📈 Project Progress
 
-- [x] Initialize project with React + Tailwind CSS  
-- [x] Build weather dashboard UI  
-- [x] Integrate real-time data fetch from OpenWeather API  
-- [ ] Add 5-day forecast section  
-- [ ] Add routing (Home, About, Saved)  
-- [ ] Implement theme switching and geolocation  
-- [ ] Optimize accessibility and performance  
+- [x] Project initialization with React + Tailwind CSS
+- [x] Dashboard UI design
+- [x] Integrate OpenWeatherMap API for current weather
+- [ ] 5-day forecast implementation
+- [x] Routing (Home, About, Saved locations)
+- [ ] Geolocation & theme switching
+- [x] Performance & accessibility optimization
 
 ---
 
@@ -159,17 +190,16 @@ _Screenshots and GIF previews, to be added once the final UI version is complete
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.  
-You are free to use, modify and distribute it for personal or commercial purposes.
+This project is licensed under the **MIT License**.
 
 ---
 
 ## 👤 Author
 
 **Knoph O. Ayieko**  
-💻 *Front-End Developer | IT Specialist | Researcher*  
+💻 Front-End Web Developer | IT Specialist | Researcher
 
-- 🌐 Portfolio: [knoph.dev](https://www.knoph.dev/)  
+- 🌐 Portfolio: [knoph.dev](https://www.knoph.dev)  
 - 💼 LinkedIn: [Knoph Ayieko](https://linkedin.com/in/knoph-ayieko)  
 - 🐙 GitHub: [Knoph1](https://github.com/Knoph1)  
 - ✉️ Email: [knophayieko@gmail.com](mailto:knophayieko@gmail.com)
@@ -177,4 +207,4 @@ You are free to use, modify and distribute it for personal or commercial purpose
 ---
 
 ### © 2025 | Weather Dashboard — ALX Africa Capstone Project  
-*Crafted with code, creativity and purpose by Knoph O. Ayieko.*
+*Crafted with code, creativity and purpose.*
