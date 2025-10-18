@@ -3,41 +3,35 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  // Secure access to environment variables
   env: {
     OPENWEATHER_API_KEY: process.env.OPENWEATHER_API_KEY,
   },
 
-  // Allow images from OpenWeather and Unsplash
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "openweathermap.org",
+        hostname: "openweathermap.org", // for weather icons
       },
       {
         protocol: "https",
-        hostname: "cdn-icons-png.flaticon.com",
+        hostname: "cdn-icons-png.flaticon.com", // optional
       },
       {
         protocol: "https",
-        hostname: "images.unsplash.com",
+        hostname: "images.unsplash.com", // optional backgrounds
       },
     ],
   },
 
-  // Ignore ESLint errors during build (optional, for CI/CD)
+  experimental: {
+    optimizePackageImports: ["lucide-react", "@/components/ui"],
+  },
+
   eslint: {
     ignoreDuringBuilds: true,
   },
 
-  // Enable some experimental performance features
-  experimental: {
-    serverActions: true,
-    optimizePackageImports: ["lucide-react", "@/components/ui"],
-  },
-
-  // Ensure production builds export correctly
   output: "standalone",
 };
 
