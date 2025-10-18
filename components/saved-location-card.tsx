@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Trash2, Loader2 } from "@/components/icons"
+import { MapPin, Trash2, Loader2 } from "lucide-react"
 import type { SavedLocation } from "@/lib/local-storage"
 import { getCurrentWeatherByCoords, formatTemp, getWeatherIconUrl, type WeatherData } from "@/lib/weather-api"
 import Image from "next/image"

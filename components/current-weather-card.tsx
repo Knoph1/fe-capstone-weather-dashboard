@@ -1,6 +1,6 @@
 "use client"
 
-import { Cloud, Droplets, Eye, Gauge, MapPin, Sunrise, Sunset, Thermometer, Wind } from "@/components/icons"
+import { Cloud, Droplets, Eye, Gauge, MapPin, Sunrise, Sunset, Thermometer, Wind } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import type { WeatherData } from "@/lib/weather-api"
 import { formatTemp, formatWindSpeed, getWeatherIconUrl, getWindDirection } from "@/lib/weather-api"

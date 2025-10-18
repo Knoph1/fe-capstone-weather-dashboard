@@ -9,7 +9,7 @@ export function ScrollToTop() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Scroll-to-top BUTTON pops-up when page is scrolled down 300px
+      // Show button when page is scrolled down 300px
       if (window.scrollY > 300) {
         setIsVisible(true)
       } else {

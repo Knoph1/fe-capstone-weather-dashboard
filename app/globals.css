@@ -1,12 +1,10 @@
-/* ✅ Core Tailwind imports (must come first) */
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* ✅ Custom dark variant for theme switching */
 @custom-variant dark (&:is(.dark *));
 
-/* 🎨 Light Mode (root) color palette */
 :root {
+  /* Enhanced color palette with vibrant blues and better contrast */
   --background: oklch(0.99 0.005 240);
   --foreground: oklch(0.15 0.01 240);
   --card: oklch(1 0 0);
@@ -42,8 +40,8 @@
   --sidebar-ring: oklch(0.55 0.22 250);
 }
 
-/* 🌙 Dark Mode Palette */
 .dark {
+  /* Enhanced dark mode with deep blues and vibrant accents */
   --background: oklch(0.12 0.02 240);
   --foreground: oklch(0.97 0.005 240);
   --card: oklch(0.16 0.02 240);
@@ -78,8 +76,8 @@
   --sidebar-ring: oklch(0.65 0.25 250);
 }
 
-/* 🌈 Theme Mapping (Tailwind custom theme variables) */
 @theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -118,7 +116,6 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* 🧩 Base styles */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -128,77 +125,109 @@
   }
 }
 
-/* 🖱️ Custom scrollbar */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: hsl(var(--color-muted));
 }
+
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--color-muted-foreground) / 0.3);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--color-muted-foreground) / 0.5);
 }
 
-/* ✨ Floating animations */
+/* Added logo animation keyframes */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
-@keyframes pulse-glow {
-  0%, 100% { filter: drop-shadow(0 0 2px currentColor); }
-  50% { filter: drop-shadow(0 0 8px currentColor); }
-}
-.logo-animate { animation: float 3s ease-in-out infinite; }
-.logo-glow { animation: pulse-glow 2s ease-in-out infinite; }
 
-/* 🪶 Hover effects */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px currentColor);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+}
+
+.logo-animate {
+  animation: float 3s ease-in-out infinite;
+}
+
+.logo-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Enhanced hover effects for interactive elements */
 .hover-lift {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px -4px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.1);
 }
+
 .dark .hover-lift:hover {
-  box-shadow: 0 8px 16px -4px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.4);
 }
 
-/* 🌟 Scroll-to-top glow */
+/* Added scroll-to-top button pulsing glow animation */
 @keyframes scroll-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(59,130,246,0.5), 0 0 40px rgba(59,130,246,0.3);
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(59,130,246,0.8), 0 0 60px rgba(59,130,246,0.5);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.5);
   }
 }
-.scroll-to-top-glow { animation: scroll-glow 2s ease-in-out infinite; }
 
-/* 🤖 Chatbot glow */
+.scroll-to-top-glow {
+  animation: scroll-glow 2s ease-in-out infinite;
+}
+
+/* Added chatbot button pulsing glow animation */
 @keyframes chatbot-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(34,211,238,0.5), 0 0 40px rgba(34,211,238,0.3);
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.5), 0 0 40px rgba(34, 211, 238, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(34,211,238,0.8), 0 0 60px rgba(34,211,238,0.5);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.8), 0 0 60px rgba(34, 211, 238, 0.5);
   }
 }
-.chatbot-glow { animation: chatbot-glow 2s ease-in-out infinite; }
 
-/* 🌤️ Weather card hover */
+.chatbot-glow {
+  animation: chatbot-glow 2s ease-in-out infinite;
+}
+
+/* Enhanced card hover effects with color transitions */
 .weather-card-hover {
   transition: all 0.3s ease;
 }
+
 .weather-card-hover:hover {
   transform: translateY(-4px) scale(1.02);
   border-color: hsl(var(--color-primary) / 0.5);
-  box-shadow: 0 12px 24px -8px rgba(59,130,246,0.3);
+  box-shadow: 0 12px 24px -8px rgba(59, 130, 246, 0.3);
 }
+
 .dark .weather-card-hover:hover {
-  box-shadow: 0 12px 24px -8px rgba(59,130,246,0.5);
+  box-shadow: 0 12px 24px -8px rgba(59, 130, 246, 0.5);
 }

@@ -8,7 +8,7 @@ import { WeatherError } from "@/components/weather-error"
 import { WeatherLoading } from "@/components/weather-loading"
 import { getForecast, getForecastByCoords, type ForecastData } from "@/lib/weather-api"
 import { Button } from "@/components/ui/button"
-import { MapPin } from "@/components/icons"
+import { MapPin } from "lucide-react"
 
 export default function ForecastPage() {
   const [forecastData, setForecastData] = useState<ForecastData | null>(null)
