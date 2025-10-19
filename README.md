@@ -186,14 +186,15 @@ API responses are parsed and displayed in a user-friendly format.
 ---
 
 ## 📸 Screenshots
-_Screenshots_
+
+_The following screenshots showcase the Weather Dashboard interface across devices and themes — highlighting responsive design, light/dark modes and major feature pages._
 
 | Desktop View | Mobile View |
 |---------------|--------------|
-| ![Desktop LightMode - Dashboard Page](./public/screenshots/desktop-light 1.1.png) | ![Mobile LightMode - Dashboard Page](./public/screenshots/mobile-light 1.1.png) |
-| ![Desktop DarkMode - Dashboard Page](./public/screenshots/desktop-dark 1.1.png) | ![Mobile DarkMode - Dashboard Page](./public/screenshots/mobile-dark 1.1.png) |
-| ![Desktop LightMode - Forecast Page](screenshots/desktop.png) | ![Mobile LightMode - Forecast Page](screenshots/mobile.png) |
-| ![Desktop LightMode - Saved Location Page](screenshots/desktop.png) | ![Mobile LightMode - Saved Location Page](screenshots/mobile.png) |
+| ![Desktop Light Mode - Dashboard Page](./public/screenshots/desktop-light%201.1.png) | ![Mobile Light Mode - Dashboard Page](./public/screenshots/mobile-light%201.1.png) |
+| ![Desktop Dark Mode - Dashboard Page](./public/screenshots/desktop-dark%201.1.png) | ![Mobile Dark Mode - Dashboard Page](./public/screenshots/mobile-dark%201.1.png) |
+| ![Desktop Light Mode - Forecast Page](./public/screenshots/desktop-forecast%202.png) | ![Mobile Light Mode - Forecast Page](./public/screenshots/mobile-forecast%202.png) |
+| ![Desktop Light Mode - Saved Location Page](./public/screenshots/desktop-saved%203.png) | ![Mobile Light Mode - Saved Location Page](./public/screenshots/mobile-saved%203.png) |
 
 ---
 
