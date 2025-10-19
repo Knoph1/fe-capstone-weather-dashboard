@@ -55,7 +55,9 @@ Check out the live application here: [Weather Dashboard on Vercel](https://fe-ca
 | **Deployment** | Vercel / Netlify |
 | **Version Control** | Git + GitHub |
 
---- ## 📂 Project Structure
+---
+
+## 📂 Project Structure
 ```bash
 fe-capstone-weather-dashboard/
 ├── .dist/                  # Build output / compiled production-ready files
@@ -184,7 +186,14 @@ API responses are parsed and displayed in a user-friendly format.
 ---
 
 ## 📸 Screenshots
-_Screenshots and GIF previews, to be added once the final UI version is complete._
+_Screenshots_
+
+| Desktop View | Mobile View |
+|---------------|--------------|
+| ![Desktop LightMode - Dashboard Page](./public/screenshots/desktop-light 1.1.png) | ![Mobile LightMode - Dashboard Page](./public/screenshots/mobile-light 1.1.png) |
+| ![Desktop DarkMode - Dashboard Page](./public/screenshots/desktop-dark 1.1.png) | ![Mobile DarkMode - Dashboard Page](./public/screenshots/mobile-dark 1.1.png) |
+| ![Desktop LightMode - Forecast Page](screenshots/desktop.png) | ![Mobile LightMode - Forecast Page](screenshots/mobile.png) |
+| ![Desktop LightMode - Saved Location Page](screenshots/desktop.png) | ![Mobile LightMode - Saved Location Page](screenshots/mobile.png) |
 
 ---
 
