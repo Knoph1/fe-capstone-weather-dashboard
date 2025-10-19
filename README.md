@@ -193,8 +193,8 @@ _The following screenshots showcase the Weather Dashboard interface across devic
 |---------------|--------------|
 | ![Desktop Light Mode - Dashboard Page](./public/screenshots/desktop-light%201.1.png) | ![Mobile Light Mode - Dashboard Page](./public/screenshots/mobile-light%201.1.png) |
 | ![Desktop Dark Mode - Dashboard Page](./public/screenshots/desktop-dark%201.1.png) | ![Mobile Dark Mode - Dashboard Page](./public/screenshots/mobile-dark%201.1.png) |
-| ![Desktop Light Mode - Forecast Page](./public/screenshots/desktop-forecast%202.png) | ![Mobile Light Mode - Forecast Page](./public/screenshots/mobile-forecast%202.png) |
-| ![Desktop Light Mode - Saved Location Page](./public/screenshots/desktop-saved%203.png) | ![Mobile Light Mode - Saved Location Page](./public/screenshots/mobile-saved%203.png) |
+| ![Desktop Light Mode - Forecast Page](./public/screenshots/desktop-light%202.png) | ![Mobile Light Mode - Forecast Page](./public/screenshots/mobile-light%202.png) |
+| ![Desktop Light Mode - Saved Location Page](./public/screenshots/desktop-light%203.png) | ![Mobile Light Mode - Saved Location Page](./public/screenshots/mobile-light%203.png) |
 
 ---
 
