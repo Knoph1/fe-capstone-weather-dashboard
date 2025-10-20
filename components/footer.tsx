@@ -82,7 +82,7 @@ export function Footer() {
           <div className="space-y-3">
             <h3 className="font-semibold text-sm">About</h3>
             <p className="text-sm text-muted-foreground text-pretty">
-              Weather data provided by OpenWeatherMap. Built with Next.js and deployed on Vercel.
+              Weather data provided by OpenWeatherMap. Initially built in <strong>React.js</strong> then shifted to <strong>Next.js</strong> and deployed on Vercel.
             </p>
           </div>
         </div>
@@ -93,13 +93,29 @@ export function Footer() {
               © {new Date().getFullYear()} Weather Dashboard. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground/80 text-center sm:text-left">
-              Developed by <span className="text-primary font-medium">Knoph O. Ayieko</span> courtesy of{" "}
-              <span className="text-accent font-medium">ALX Africa Front-End Development studies</span>
+              Developed by{" "}
+              <a
+                href="https://www.knoph.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium hover:text-primary/80 hover:underline transition-colors duration-200"
+              >
+                Knoph O. Ayieko
+              </a>{" "}
+              courtesy of{" "}
+              <a
+                href="https://www.alxafrica.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent font-medium hover:text-accent/80 hover:underline transition-colors duration-200"
+              >
+                ALX Africa Front-End Web Development
+              </a>
             </p>
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Knoph1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-200 hover:scale-110"
@@ -108,7 +124,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/knoph-ayieko"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#0A66C2] transition-all duration-200 hover:scale-110"
@@ -117,7 +133,7 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/knoph_ayieko"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#E4405F] transition-all duration-200 hover:scale-110"
@@ -126,7 +142,7 @@ export function Footer() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/knoph.ayieko"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#1877F2] transition-all duration-200 hover:scale-110"
@@ -135,7 +151,7 @@ export function Footer() {
               <Facebook className="h-5 w-5" />
             </a>
             <a
-              href="https://x.com"
+              href="https://x.com/knoph_ayieko"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-all duration-200 hover:scale-110"

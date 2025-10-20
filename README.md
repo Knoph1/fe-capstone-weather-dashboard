@@ -4,7 +4,7 @@
 # fe-capstone-weather-dashboard  
 **ALX Front-End Capstone Project**
 
-A professional, fully responsive **Weather Dashboard** built with **React (Vite)** and **Tailwind CSS**, delivering real-time weather updates and forecasts using the **OpenWeatherMap API**.  
+A professional, fully responsive **Weather Dashboard** built with **React (Vite)** and **Tailwind CSS** *(shifted to **Next.js**)*, delivering real-time weather updates and forecasts using the **OpenWeatherMap API**.  
 This project demonstrates modern front-end development best practices — speed, interactivity, accessibility and scalability.
 
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-blue)](https://fe-capstone-weather.vercel.app/)
@@ -30,15 +30,25 @@ Check out the live application here: [Weather Dashboard on Vercel](https://fe-ca
 
 ---
 
-## ✨ Features
+## 📂 GitHub Repository
+📦 **Repo Link:** [Weather Dashboard on GitHub](https://github.com/Knoph1/fe-capstone-weather-dashboard)
 
+---
+
+## 🎥 Demo Video
+📽️ **Loom Recording:** [Watch Demo Presentation - Loom Recording](https://www.loom.com/share/8d8c43f302d247d8ad1059d3a3a73dce?sid=5d376f65-4f87-40c3-b2aa-86e0a7fc7309)
+
+---
+
+## ✨ Features
 - 🌍 **Current Weather:** Temperature, feels like, min/max, conditions with icons, humidity, wind, pressure, sunrise/sunset times.
 - 📅 **5-Day Forecast:** Daily overview with icons, temperature ranges and weather predictions.
-- 🕐 **24-Hour Forecast:** Hourly weather updates (planned).
-- 📌 **Saved Locations:** Store frequently searched cities (planned).
+- 🕐 **24-Hour Forecast:** Hourly weather updates *(planned)*.
+- 📌 **Saved Locations:** Store frequently searched cities *(planned)*.
 - 🌓 **Dark/Light Mode:** Seamless theme switching based on user or system preference.
 - 📱 **Responsive Design:** Optimized for desktop, tablet and mobile.
-- ⚡ **Fast Development:** Powered by **Vite** for instant hot reloads.
+- ⚡ **Fast Development:** Powered by **Next.js (shifted from Vite)** for SSR and SSG.
+- ⚠️ **404 Not Found Page:** Custom error page with a clean layout, friendly message and navigation back to the homepage — improving user experience and app completeness.
 - 🔍 **SEO & Accessibility:** Clean metadata, semantic HTML, ARIA attributes, descriptive URLs.
 
 ---
@@ -47,12 +57,12 @@ Check out the live application here: [Weather Dashboard on Vercel](https://fe-ca
 
 | Category | Technology |
 |-----------|-------------|
-| **Framework** | React (Vite) |
+| **Framework** | Next.js (Originally React + Vite) |
 | **Language** | JavaScript (ES6+) |
 | **Styling** | Tailwind CSS |
 | **API** | OpenWeatherMap |
 | **Routing** | React Router DOM *(planned)* |
-| **Deployment** | Vercel / Netlify |
+| **Deployment** | Vercel |
 | **Version Control** | Git + GitHub |
 
 ---
@@ -60,9 +70,6 @@ Check out the live application here: [Weather Dashboard on Vercel](https://fe-ca
 ## 📂 Project Structure
 ```bash
 fe-capstone-weather-dashboard/
-├── .dist/                  # Build output / compiled production-ready files
-├── .vscode/                # VS Code workspace & editor settings
-│   └── settings.json
 ├── app/                    # Application routes/pages (Next.js App Router)
 │   ├── forecast/           # Forecast feature (layout + page)
 │   ├── locations/          # Locations feature (layout + page)
@@ -71,44 +78,16 @@ fe-capstone-weather-dashboard/
 │   ├── loading.tsx         # App-level loading screen
 │   └── page.tsx            # Home page
 ├── components/             # Reusable components
-│   └── ui/                 # UI building blocks (buttons, modals, cards, etc.)
-│       ├── button.tsx
-│       ├── card.tsx
-│       ├── dialog.tsx
-│       ├── input.tsx
-│       ├── table.tsx
-│       └── ...other UI components
-├── hooks/                  # Custom React hooks (e.g., useWeather, useFetch)
-│   └── ...
+│   └── ui/                 # UI building blocks
+├── hooks/                  # Custom React hooks
 ├── lib/                    # Utility functions, API logic and helpers
-│   ├── api.ts
-│   └── ...
-├── public/                 # Static assets (images, icons, fonts)
-│   ├── favicon.ico
-│   └── ...
+├── public/                 # Static assets
 ├── styles/                 # Global or modular stylesheets
-│   ├── variables.css
-│   └── ...
-├── .env.local              # Local environment variables (API keys, secrets)
-├── .gitignore              # Git ignore rules
-├── .postcssrc              # PostCSS configuration (alternative format)
-├── components.json         # ShadCN/UI or component metadata
-├── eslint.config.js        # ESLint configuration
-├── index.html              # HTML template (if used by Vite)
-├── LICENSE                 # License file (MIT)
-├── next-env.d.ts           # Next.js TypeScript declarations
+├── .env.local              # Environment variables
 ├── next.config.mjs         # Next.js configuration
 ├── package.json            # Dependencies, scripts and metadata
-├── pnpm-lock.yaml          # Package lock file for pnpm
-├── pnpm-workspace.yaml     # pnpm workspace setup
-├── postcss.config.mjs      # PostCSS configuration (Tailwind, Autoprefixer)
-├── README.md               # Project documentation
-├── SECURITY.md             # Security policy
-├── tailwind.config.js      # TailwindCSS configuration (themes, plugins)
-├── tsconfig.json           # TypeScript compiler configuration
-├── vercel-ignore.txt       # Files ignored during Vercel deployment
-├── vercel.json             # Vercel deployment configuration
-└── vite.config.js          # Vite bundler configuration (if integrated)
+├── tailwind.config.js      # TailwindCSS configuration
+└── README.md               # Project documentation
 ```
 
 ---  
@@ -128,12 +107,13 @@ cd fe-capstone-weather-dashboard
 npm install
 
 # Add OpenWeatherMap API key in src/lib/weather.ts
-const API_KEY = "your_api_key_here"
+const API_KEY = "api_key"
 
 # Run development server
 npm run dev
 ```
-Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
@@ -169,19 +149,19 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 | 5-Day Forecast | `/data/2.5/forecast` |
 | Geocoding | `/geo/1.0/direct` |
 
-API responses are parsed and displayed in a user-friendly format.
-
 ---
 
 ## 📈 Project Progress
 
 - [x] Project initialization with React + Tailwind CSS
+- [x] Migrated to Next.js for better performance and deployment
 - [x] Dashboard UI design
-- [x] Integrate OpenWeatherMap API for current weather
-- [ ] 5-day forecast implementation
-- [x] Routing (Home, About, Saved locations)
-- [ ] Geolocation & theme switching
+- [x] Integrated OpenWeatherMap API
+- [x] 5-day forecast implementation
+- [x] Routing (Dashboard, Forecast and Saved Locations)
+- [x] Geolocation & theme switching
 - [x] Performance & accessibility optimization
+- [x] Deployment to Vercel
 
 ---
 
@@ -195,12 +175,28 @@ _The following screenshots showcase the Weather Dashboard interface across devic
 | ![Desktop Dark Mode - Dashboard Page](./public/screenshots/desktop-dark%201.1.png) | ![Mobile Dark Mode - Dashboard Page](./public/screenshots/mobile-dark%201.1.png) |
 | ![Desktop Light Mode - Forecast Page](./public/screenshots/desktop-light%202.png) | ![Mobile Light Mode - Forecast Page](./public/screenshots/mobile-light%202.png) |
 | ![Desktop Light Mode - Saved Location Page](./public/screenshots/desktop-light%203.png) | ![Mobile Light Mode - Saved Location Page](./public/screenshots/mobile-light%203.png) |
+| ![Desktop Light Mode - Error Handling](./public/screenshots/error_handling.png) | ![Mobile Light Mode - Error Handling](./public/screenshots/error.png) |
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
+
+---
+
+## 🏁 Acknowledgements
+
+- **ALX Africa** & the **Software Engineering Program Team** for mentorship, resources and guidance throughout this learning journey.  
+- **OpenWeather** for providing the free weather API service used in this project.  
+- **Tailwind CSS**, **React** & **Next.js** communities for their excellent documentation and active developer support.  
+- My peers and mentors who offered feedback, encouragement and collaboration during project development.
+
+---
+
+## 💡 Note
+
+> Built with passion and perseverance 💻✨
 
 ---
 

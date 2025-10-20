@@ -1,7 +1,9 @@
 // ✅ Load API key from environment
 // Use NEXT_PUBLIC_ prefix if you intend to call this directly from client-side code.
 // Otherwise, keep it private (no prefix) and call through your /api route.
-const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.OPENWEATHER_API_KEY;
+const API_KEY = "a22ea7df422ff7960253558fafd0802d"
+// const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.OPENWEATHER_API_KEY;
+
 // OpenWeatherMap API configuration and utilities
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
 const GEO_URL = "https://api.openweathermap.org/geo/1.0"

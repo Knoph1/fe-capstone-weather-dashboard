@@ -115,7 +115,7 @@ export default function HomePage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-balance lg:text-5xl">Real-Time Weather Dashboard</h1>
         <p className="text-muted-foreground text-lg max-w-2xl text-pretty">
-          Get accurate weather conditions, forecasts, and detailed meteorological data for any location worldwide.
+          Get accurate weather conditions, forecasts and detailed meteorological data for any location worldwide.
         </p>
       </div>
 
