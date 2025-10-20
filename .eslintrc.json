@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "ignorePatterns": [
+    ".next/",
+    "node_modules/"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect",
+      "jsxRuntime": "automatic"
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
+}
