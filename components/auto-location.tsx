@@ -16,7 +16,7 @@ export function AutoLocation() {
           console.log("[v0] Auto-detected location:", position.coords)
           router.push(`/?lat=${position.coords.latitude}&lon=${position.coords.longitude}`)
         },
-        (error) => {
+        () => {
           console.log("[v0] Geolocation not available, using default location")
         },
       )

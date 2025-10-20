@@ -26,7 +26,7 @@ export function SavedLocationCard({ location, onRemove, onSelect }: SavedLocatio
     try {
       const data = await getCurrentWeatherByCoords(location.lat, location.lon)
       setWeatherData(data)
-    } catch (err) {
+    } catch {
       setError(true)
     } finally {
       setIsLoading(false)

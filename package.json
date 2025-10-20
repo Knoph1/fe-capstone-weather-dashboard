@@ -5,8 +5,8 @@
   "scripts": {
   "build": "next build",
   "dev": "next dev",
-  "lint": "eslint . --ext .ts,.tsx,.js,.jsx --ignore-path .eslintignore",
-  "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --ignore-path .eslintignore --fix",
+  "lint": "eslint . --ext .ts,.tsx,.js,.jsx --ignore-pattern .next/** --ignore-pattern node_modules/**",
+  "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --ignore-pattern .next/** --ignore-pattern node_modules/** --fix",
   "start": "next start"
   },
   "dependencies": {

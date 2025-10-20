@@ -39,7 +39,6 @@ export function ForecastCard({ data }: ForecastCardProps) {
 
   // Calculate daily averages and extremes
   groupedByDay.forEach((items, date) => {
-    const temps = items.map((item) => item.main.temp)
     const temp_min = Math.min(...items.map((item) => item.main.temp_min))
     const temp_max = Math.max(...items.map((item) => item.main.temp_max))
     const humidity = Math.round(items.reduce((sum, item) => sum + item.main.humidity, 0) / items.length)
